@@ -1,6 +1,6 @@
-import { Controller, Get, Query } from '@nestjs/common';
-import { CommitsService } from './commits.service';
-import { ParamsFindAll } from './types/params';
+import { Controller, Get, Query } from '@nestjs/common'
+import { CommitsService } from './commits.service'
+import { IParamsFindAll } from './interfaces/param.interface'
 
 @Controller('commits')
 export class CommitsController {
@@ -9,12 +9,12 @@ export class CommitsController {
   @Get()
   findAll(
     @Query('username') username: string,
-    @Query('repository') repository: string,
+    @Query('repository') repository: string
   ) {
-    const paramFindAll: ParamsFindAll = {
+    const paramFindAll: IParamsFindAll = {
       username,
-      repository,
-    };
-    return this.commitsService.findAll(paramFindAll);
+      repository
+    }
+    return this.commitsService.findAll(paramFindAll)
   }
 }

@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 import { CommitForm } from "./components/CommitForm";
-import { APIGitHub } from "./types/commits.type";
-import { ParamsFindAll } from "./types/params.type";
+import { APIGitHub } from "./interfaces/commits.interface";
+import { ParamsFindAll } from "./interfaces/params.interface";
 import { CommitService } from "./services/commit.service";
 import { CommitChild } from "./components/CommitChild";
 import "./App.css";

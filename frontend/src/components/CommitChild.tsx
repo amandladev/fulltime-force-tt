@@ -1,4 +1,4 @@
-import { APIGitHubAuthor, Commit } from "../types/commits.type";
+import { APIGitHubAuthor, Commit } from "../interfaces/commits.interface";
 
 interface Props {
   author: APIGitHubAuthor;

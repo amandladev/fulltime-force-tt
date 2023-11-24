@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ParamsFindAll } from "../types/params.type";
+import { ParamsFindAll } from "../interfaces/params.interface";
 
 interface Props {
   search: (params: ParamsFindAll) => Promise<void>

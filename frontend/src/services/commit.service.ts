@@ -1,8 +1,7 @@
-import type { APIGitHub } from '../types/commits.type'
-import type { ParamsFindAll } from '../types/params.type'
-
+import type { APIGitHub } from '../interfaces/commits.interface'
+import { IParamsFindAll } from '../interfaces/params.interface'
 export class CommitService {
-  async findAll(params: ParamsFindAll) {
+  async findAll(params: IParamsFindAll) {
     const { username, repository } = params
     try {
       const response = await fetch(

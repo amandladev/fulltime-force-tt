@@ -1,4 +1,4 @@
-export type ParamsFindAll = {
+export interface IParamsFindAll {
     username: string
     repository: string
   }

@@ -10,7 +10,7 @@ Clone the repository:
 
    ```bash
    git clone https://github.com/sreyescurotto/fulltime-force-tt.git
-   
+   cd fulltime-force-tt
 ```
 ### Backend
 

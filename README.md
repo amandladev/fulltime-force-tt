@@ -50,6 +50,6 @@ pnpm i
 ```
 2. Run the frontend:
 ```bash
-pnpm run start:dev
+pnpm run dev
 ```
 

@@ -48,7 +48,7 @@ cd frontend
 ```bash 
 pnpm i
 ```
-2. Run the fronted:
+2. Run the frontend:
 ```bash
 pnpm run start:dev
 ```
